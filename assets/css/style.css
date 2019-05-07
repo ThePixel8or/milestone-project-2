@@ -1,0 +1,67 @@
+html, body {
+    background-color: #1f2833;
+    overflow: hidden;
+}
+
+.col-12 {
+    padding: 0;
+    margin: 0;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    height: calc(50vh - .9em);
+    border-radius: 15%;
+    border: solid 3px white;
+}
+
+.button1 {
+    background-color: red;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+    margin-right: 0.3em;
+    border-bottom-right-radius: 50%
+}
+
+.button2 {
+    background-color: blue;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+    border-bottom-left-radius: 50%;
+    
+}
+
+.button3 {
+    background-color: green;
+    margin-bottom: 0.6em;
+    margin-top: 0.3em;
+    margin-right: 0.3em;
+    border-top-right-radius: 50%;
+}
+
+.button4 {
+    background-color: yellow;
+    margin-bottom: 0.6em;
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+    border-top-left-radius: 50%
+}
+
+/*.container-fluid {
+    position: relative;
+}*/
+.centerPad {
+    position: absolute;
+    text-align: center;
+    height: 10em;
+    width: 10em;
+    background-color: #1f2833;
+    left: calc(50% - 5em);
+    top: calc(50% - 5em);
+    border-radius: 50%;
+    border: .2em solid white;
+    
+}
