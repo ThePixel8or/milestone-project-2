@@ -1,5 +1,5 @@
 html, body {
-    background-color: #1f2833;
+    background-color: #1d1b1b;
     overflow: hidden;
 }
 
@@ -12,43 +12,153 @@ html, body {
 .button2,
 .button3,
 .button4 {
-    height: calc(50vh - .9em);
-    border-radius: 15%;
-    border: solid 3px white;
+    height: calc(50vh - 1.2em);
+  /*  border-radius: 15%; */
+ /* border: solid 3px rgba(255,255,255, 1); */
+    
+ 
+    
+    /*   box-shadow: inset 0px 0px 75px #000000; */
+ /*  box-shadow: inset 0 0 10px 0px pink, */
+    box-shadow: inset hsla(0, 100%, 50%, 0.5) 0px 0px 75px,
+   inset 0 0 75px 0px black,
+   inset 0px 0px 30px 15px #000066,
+   inset  hsla(240,100%,50%,1) 0px 0px 30px 15px;
+   
+   border-radius: 20%;
+  /* border: 3px solid #00001a;
+  /*  transform: rotate(-45deg); */
 }
+
+
 
 .button1 {
-    background-color: red;
+    background-color: #990000;
     margin-top: 0.6em;
-    margin-bottom: 0.3em;
-    margin-right: 0.3em;
-    border-bottom-right-radius: 50%
+    margin-bottom: 0.6em;
+    margin-right: 0.6em;
+  /*  border-bottom-right-radius: 0% */
+  
+    box-shadow: inset hsla(0,0%,15%,  .8) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
+  
 }
 
+
+.button1:hover {
+    background-color: #ff0000;
+    
+     box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+    hsla(0,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+}
+
+
+
 .button2 {
-    background-color: blue;
+    background-color: #003399;
     margin-top: 0.6em;
-    margin-bottom: 0.3em;
-    margin-left: 0.3em;
-    border-bottom-left-radius: 50%;
+    margin-bottom: 0.6em;
+    margin-left: 0.6em;
+ /*   border-bottom-left-radius: 0%; */
+ 
+ box-shadow: inset hsla(0,0%,15%,  .8) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
     
 }
 
-.button3 {
-    background-color: green;
-    margin-bottom: 0.6em;
-    margin-top: 0.3em;
-    margin-right: 0.3em;
-    border-top-right-radius: 50%;
+.button2:hover {
+    background-color: #0055ff;
+
+     box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(220,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+    hsla(220,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+
 }
 
-.button4 {
-    background-color: yellow;
+
+
+
+.button3 {
+    background-color: #006600;
     margin-bottom: 0.6em;
-    margin-top: 0.3em;
-    margin-left: 0.3em;
-    border-top-left-radius: 50%
+    margin-top: 0.6em;
+    margin-right: 0.6em;
+ /*   border-top-right-radius: 0%; */
+ 
+ box-shadow: inset hsla(0,0%,15%,  .8) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
+ 
 }
+
+
+.button3:hover {
+    background-color: #00cc00;
+   
+ box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(120,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+    hsla(120,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */   
+   
+}
+
+
+.button4 {
+    background-color: #b3b300;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+  /*  border-top-left-radius: 0% */
+  
+  box-shadow: inset hsla(0,0%,15%,  .8) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
+  
+}
+
+.button4:hover {
+    background-color: #ffff33;
+   
+    box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(60,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+    hsla(60,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+}
+
+
 
 /*.container-fluid {
     position: relative;
@@ -58,10 +168,35 @@ html, body {
     text-align: center;
     height: 10em;
     width: 10em;
-    background-color: #1f2833;
+    background-color: #797978;
+ /*   background-image: radial-gradient(circle, red 45%,blue 50%,green 65%); */
     left: calc(50% - 5em);
     top: calc(50% - 5em);
     border-radius: 50%;
-    border: .2em solid white;
+  /*  border: 0.2em solid white; */
     
+    
+   /* border: .3em solid hsla(0, 0%, 0%, .8); */
+   
+   box-shadow: inset hsla(0,0%,15%,  1) 0  0px 4px 5px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.45) 0 -5px 15px 20px, /* outer SD */
+    hsla(0,0%,100%,.7) 0px  0px 6px 6px; /* outer HL */ 
+     
+   
+   /*  box-shadow: inset hsla(0, 0%,0%,  0.7) 0px  0px .6em .6em, /* border */
+   /* inset hsla(0,0%,55%, 0.9) 0px 0px .4em .4em, /* soft SD */
+   /* inset hsla(0,0%,10%, .9) 0px 0px 4px 4px, /* bottom SD */
+/*inset hsla(15,100%,25%,.9) 0px  0px 4px 4px, /* top HL */
+    /*inset hsla(0, 100%, 50%, .9 ) 0px 0px 4px 4px,
+    hsla(0,0%, 0%,.2) 0 0px 6px 14px /* outer SD ,
+  /*  hsla(0,0%,80%,.5) 0  0px 6px 4px; /* outer HL */ ;
+    
+}
+
+.centerPad:hover {
+    background-color: white;
 }
