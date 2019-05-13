@@ -4,38 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Simon Says Game">
+    <meta name="keywords" content="retro, game, simon, 80s, memory">
+    <meta name="author" content="Derek Flanagan">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <title>Simon Game | Milestone Project 2</title> 
+    
+
+    
 </head>
 <body>
     
+    
+    
     <div class="container-fluid">
-        <div class="row col-12">
-            <div class="col button1">
-            </div>
-            <div class="col button2">
+        
+                <div class="row">
+            <div class="d-none d-lg-block game-title-header">
+                <header>
+                    Simon Says
+                </header>
             </div>
         </div>
         
         
-        <div class="row col-12">
-            <div class="col button3">
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-3 rules-wrapper">
+                <div class="game-rules">
+                    game rules goes here
+                </div>
             </div>
-            <div class="col button4">
-            </div>
-        </div>
-        
-        <div class="centerPad">
-            <div class="playIcon">
+            
+            <div class="col-sm-12 col-lg-6 gameSection">
+                <div class="row">
+                    <div class="col button1"></div>
+                    <div class="col button2"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col button3"></div>
+                    <div class="col button4"></div>
+                </div>
                 
             </div>
+            
+            <div class="d-none d-lg-block col-lg-3 settings-wrapper">
+                <div class="game-settings">
+                    game settings goes here
+                </div>
+            </div>
         </div>
+        
+        
+        <div class="row">
+            <div class="d-none d-lg-block col-lg-12 footer-info">
+                <footer>
+                    footer information will go here
+                </footer>
+            </div>
+        </div>
+        
+        <!-- model -  bootstrap modal section will be added -->
+        
+        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+        
+        <!-- model end -->
+        
+            
+        </div>
+        
+        <div class="centerPad test">
+      
+        
+<i class="fas fa-play"></i>
+
+
+<!--<span class="fa-stack fa-4x">
+ <i class=""></i>
+ <strong class="fas">27</strong>
+ </span>            for adding numbers to count                    -->
+
+            
+        </div>
+        
+        
+        
         
     </div>
     
-    </div> 
+    
+    
+
+    
+    
+    
+  <!--      <script type="text/javascript">
+$(document).ready(function () {
+
+    $('#exampleModalCenter').modal('show');
+
+});
+</script>   to have modal pop up when you first land on page -->
+    
     
         <!--  BOOTSTRAP SCRIPTS -->
 
