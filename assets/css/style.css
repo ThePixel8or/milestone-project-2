@@ -247,7 +247,7 @@ body {
 .button3,
 .button4 {
         
-    height: calc(50vh - 5.4em);
+    height: calc(50vh - 9.4em);
     }
     
 .centerPad {
@@ -266,6 +266,9 @@ body {
 
     }
     
+.gameSection {
+    padding: 4em;
+}
 }
 
 
