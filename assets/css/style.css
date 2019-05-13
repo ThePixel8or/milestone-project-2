@@ -6,7 +6,6 @@ body {
     overflow: hidden;
 }
 
-
 .button1,
 .button2,
 .button3,
@@ -15,8 +14,6 @@ body {
     border-radius: 20%;
     margin: .6em;
 }
-
-
 
 .button1 {
     background-color: #990000;
@@ -31,7 +28,6 @@ body {
     
     hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
     hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
-  
 }
 
 
@@ -49,7 +45,6 @@ body {
     hsla(0,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
     hsla(0,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
 }
-
 
 
 .button2 {
@@ -246,28 +241,31 @@ body {
 /*   MEDIA QUEIRES */
 
 @media (min-width: 991px) {
-    .button1,
-    .button2,
-    .button3,
-    .button4 {
+    
+.button1,
+.button2,
+.button3,
+.button4 {
         
-        height: calc(50vh - 5.4em);
+    height: calc(50vh - 5.4em);
     }
     
-    .centerPad {
-        left: calc(50% - 4.2em);
-        top: calc(50% - 2.6em);
-        height: 8em;
-        width: 8em;
+.centerPad {
+    
+    left: calc(50% - 4.2em);
+    top: calc(50% - 2.6em);
+    height: 8em;
+    width: 8em;
     }
     
-    .fas {
-        font-size: 3em;
-        top: 28%;
-        left: 37%;   /* I need to calculate the percentages better */
+.fas {
+    
+    font-size: 3em;
+    top: 28%;
+    left: 37%;   /* I need to calculate the percentages better */
+
     }
     
 }
-
 
 
