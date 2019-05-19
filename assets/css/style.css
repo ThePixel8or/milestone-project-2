@@ -257,29 +257,52 @@ body {
 }
 
 
-.game-rules {
+.game-rules,
+.game-settings {
+    
     height: auto;
-    background-color: gray;
-    border: 2px solid blue;
+    background-color: #4f4a41;
+    border: 2px solid #d9d9d9;
     margin-top: 10em;
-    color: white;
+    padding: .4em;
+    color: #d9d9d9;
     text-align: center
 }
 
-.game-rules span {
-    font-size: 2em;
-}
-.fa-gamepad  {
-    font-size: 1.6em;
-    color: white;
+.game-rules span,
+.game-settings span {
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+    
 }
 
-.game-settings {
+.devider {
+    background-color: #d9d9d9;
+}
+.fa-gamepad,
+.fa-cog {
+    display: block;
+    font-size: 1.6em;
+    color: #d9d9d9;
+}
+
+.select-dificulty {
+    padding-top: .8em;
+}
+
+.select-dificulty span {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+/* .game-settings {
     height: 100px;
     background-color: gray;
     margin-top: 10em;
     color: white;
-}
+} */
 
 .footer-info {
     background-color: gray;
