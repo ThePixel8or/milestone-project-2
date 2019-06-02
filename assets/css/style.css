@@ -8,6 +8,7 @@ body {
     background-color: #282525;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -36,20 +37,20 @@ body {
 }
 
 
-.button1:hover {
+/*.button1:hover {
     background-color: #ff0000;
     
     border: solid 3px #330000; /* fallback colour */
-    border: solid 3px hsla(0,0%,5%,.8); 
+/*  border: solid 3px hsla(0,0%,5%,.8); 
     
-     box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
-    inset hsla(0,100%,20%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(0,100%,60%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+/*     box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+/*    inset hsla(0,100%,20%, .8) 0 -1px 5px 4px, /* soft SD */
+/*    inset hsla(0,100%,60%, .25) 0 -1px 0px 7px, /* bottom SD */
+/*    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
-    hsla(0,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
-    hsla(0,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
-}
+/*    hsla(0,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+/*    hsla(0,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+/*  } */
 
 
 .button2 {
@@ -68,21 +69,21 @@ body {
     
 }
 
-.button2:hover {
+/*.button2:hover {
     background-color: #0055ff;
     
     border: solid 3px #001133; /* fallback color */
-    border: solid 3px hsla(0,0%,5%,.8); 
+ /*   border: solid 3px hsla(0,0%,5%,.8); 
 
      box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
-    inset hsla(220,100%,20%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(220,100%,60%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+/*    inset hsla(220,100%,20%, .8) 0 -1px 5px 4px, /* soft SD */
+/*    inset hsla(220,100%,60%, .25) 0 -1px 0px 7px, /* bottom SD */
+/*    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
-    hsla(220,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
-    hsla(220,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+/*    hsla(220,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+/*    hsla(220,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
 
-}
+/*  } */
 
 .button3 {
     background-color: #006600;
@@ -101,21 +102,21 @@ body {
 }
 
 
-.button3:hover {
+/*.button3:hover {
     background-color: #00cc00;
     
     border: solid 3px #003300; /* fallback colour */
-    border: solid 3px hsla(0,0%,5%,.8); 
+/*    border: solid 3px hsla(0,0%,5%,.8); 
    
  box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
-    inset hsla(120,100%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(120,100%,30%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+/*    inset hsla(120,100%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+/*    inset hsla(120,100%,30%, .25) 0 -1px 0px 7px, /* bottom SD */
+/*    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
-    hsla(120,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
-    hsla(120,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */   
+/*    hsla(120,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+/*    hsla(120,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */   
    
-}
+/*}*/
 
 
 .button4 {
@@ -134,20 +135,20 @@ body {
   
 }
 
-.button4:hover {
+/*.button4:hover {
     background-color: #ffff33;
     
     border: solid 3px #332700; /* fallback colour */
-    border: solid 3px hsla(0,0%,5%,.8); 
+/*    border: solid 3px hsla(0,0%,5%,.8); 
    
-    box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
-    inset hsla(60,100%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-    inset hsla(60,100%,35%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+/*    box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, /* border */
+/*    inset hsla(60,100%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+/*    inset hsla(60,100%,35%, .25) 0 -1px 0px 7px, /* bottom SD */
+/*    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
     
-    hsla(60,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
-    hsla(60,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
-}
+/*    hsla(60,100%, 80%,.2) 0 -5px 15px 14px, /* outer SD */
+/*    hsla(60,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
+/*}*/
 
 .centerPad {
     position: absolute;
@@ -187,7 +188,7 @@ body {
 
 }
 
-.play-counter {
+.playCounter {
     position: absolute;
     font-size: 4em;
     background-color: #00284d;
@@ -200,7 +201,7 @@ body {
 /*    background-clip: box;           Having an issue in the background-clip in CSS validator        */
 }
 
-.centerPad:hover .play-counter {
+.centerPad:hover .playCounter {
     background-color: #339cff;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, .7);
 }
@@ -304,13 +305,33 @@ body {
     color: white;
 } */
 
-.footer-info {
-    background-color: gray;
+.footer-section {
+    text-align: center;
+    background-color: #4f4a41;
+    color: #d9d9d9;
+    height: 50%;
+    font-size: .8em;
+}
+
+.footer-info,
+.copyright, p  {
+    
+    margin: 0;
+}
+
+.signature {
+    margin-bottom: .2em;
+}
+.footer-info a {
+    
+   display: inline-block; 
+    color: #d9d9d9;
+    font-size: 1.8em;
+}
+
+.footer-info a:hover {
     color: white;
-    height: 1.5em;
-    width: 100%;
-    font-size: 30px;
-    font-family: 'Press Start 2P', cursive;
+
 }
 
 .settings-wrapper,
@@ -340,7 +361,7 @@ body {
     width: 8em;
     }
     
-.play-counter {
+.playCounter {
     
     font-size: 3em;
     top: 28%;

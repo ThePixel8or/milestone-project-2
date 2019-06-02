@@ -23,10 +23,13 @@
 
 
     <div class="container-fluid">
+        
 
         <div class="row">
             <div class="d-none d-lg-block header-wrapper">
                 <header class="game-title-header">
+                    
+                    
                     <span class="txt-content">Simon</span>
                     <p><strong>Think fast! </strong> Simon says repeat my flashing <span>Lights</span> and <span>sounds</span></p>
                 </header>
@@ -46,13 +49,13 @@
 
             <div class="col-sm-12 col-lg-6 gameSection">
                 <div class="row">
-                    <div class="col button1"></div>
-                    <div class="col button2"></div>
+                    <div id="redBtn" class="col button1"></div>
+                    <div id="blueBtn" class="col button2"></div>
                 </div>
 
                 <div class="row">
-                    <div class="col button3"></div>
-                    <div class="col button4"></div>
+                    <div id="greenBtn" class="col button3"></div>
+                    <div id="YellowBtn" class="col button4"></div>
                 </div>
 
             </div>
@@ -65,7 +68,7 @@
                     
                     <div class="custom-control custom-switch">
   <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Toggle Sound On/Off</label>
+  <label class="custom-control-label" for="customSwitch1">Toggle Sound Off/On</label>
 </div>
                     
                     <!-- radios -->
@@ -87,13 +90,15 @@
         </div>
 
 
-        <div class="row">
+      
+      
+<!--        <div class="row">
             <div class="d-none d-lg-block col-lg-12 footer-info">
                 <footer>
                     footer information will go here
                 </footer>
             </div>
-        </div>
+        </div> -->
 
         <!-- model -  bootstrap modal section will be added -->
 
@@ -134,7 +139,7 @@
     <div class="centerPad">
 
 
-        <i class="fas fa-play play-counter"></i>
+        <i class="fas fa-play playCounter"></i>
 
 
         <!--<span class="fa-stack fa-4x">
@@ -147,6 +152,24 @@
 
 
 
+<footer class="footer-section container-fluid">
+    <div class="row">
+            <div class="d-none d-lg-block col-lg-12">
+                <div class="footer-info">
+                    <p>Code Institute | Milestone 2 Project</p>
+                    <p><span><small>Interactive Frontend Development</small></span></p>
+                    <p class="signature"><span><small>by Derek Flanagan</small></span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/ThePixel8or" target="_blank">
+                                <i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                    <p class="copyright"><small>© 2019 Derek Flanagan | All Rights Reserved</small> </p>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -164,6 +187,17 @@ $(document).ready(function () {
 
 });
 </script>   to have modal pop up when you first land on page -->
+
+
+        <!-- Jquery scripts -->
+        
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  
+        <script src="assets/js/main.js"></script> 
 
 
     <!--  BOOTSTRAP SCRIPTS -->
