@@ -16,6 +16,19 @@
 
 
 
+    <audio id="clip1">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
+
 </head>
 
 <body>
@@ -49,13 +62,13 @@
 
             <div class="col-sm-12 col-lg-6 gameSection">
                 <div class="row">
-                    <div id="redBtn" class="col button1"></div>
-                    <div id="blueBtn" class="col button2"></div>
+                    <div id="topleft" class="col button1"></div>
+                    <div id="topright" class="col button2"></div>
                 </div>
 
                 <div class="row">
-                    <div id="greenBtn" class="col button3"></div>
-                    <div id="YellowBtn" class="col button4"></div>
+                    <div id="bottomleft" class="col button3"></div>
+                    <div id="bottomright" class="col button4"></div>
                 </div>
 
             </div>
@@ -67,8 +80,8 @@
                     <hr class="devider">
                     
                     <div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Toggle Sound Off/On</label>
+  <input type="checkbox" class="custom-control-input" id="on">
+  <label class="custom-control-label" for="on">Toggle Sound Off/On</label>
 </div>
                     
                     <!-- radios -->
@@ -136,7 +149,7 @@
     </div>
 
 
-    <div class="centerPad">
+    <div id="start" class="centerPad">
 
 
         <i class="fas fa-play playCounter"></i>
@@ -150,7 +163,7 @@
 
     </div>
 
-
+    <div id="turn"></div>
 
 <footer class="footer-section container-fluid">
     <div class="row">
