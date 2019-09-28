@@ -1,18 +1,3 @@
-
-/*document.getElementById('redBtn').addEventListener("mousedown" , mouseDown);
-document.getElementById('redBtn').addEventListener('mouseup' , mouseUp);
-    
-    function mouseDown() {
-        document.getElementById('redBtn').setAttribute(
-            "style", "background-color: #ff0000;  border: solid 3px #330000; border: solid 3px hsla(0,0%,5%,.8); box-shadow: inset hsla(0,0%,15%,  .6) 0  0px 25px 30px, inset hsla(0,100%,20%, .8) 0 -1px 5px 4px, inset hsla(0,100%,60%, .25) 0 -1px 0px 7px, inset hsla(0,0%,100%,.7) 0  2px 1px 7px,  hsla(0,100%, 80%,.2) 0 -5px 15px 14px, hsla(0,100%,80%,.5) 0px  0px 6px 4px;")
-        
-}
-
-function mouseUp() {
-    document.getElementById('redBtn').setAttribute( "style", "");
-} */
-
-
 let order = [];
 let playerOrder = [];
 let flash;
@@ -25,11 +10,12 @@ let noise = true;
 let on = false;
 let win;
 
+
 const turnCounter = document.querySelector("#turn");
-const topLeft = document.querySelector("#topleft");
-const topRight = document.querySelector("#topright");
-const bottomLeft = document.querySelector("#bottomleft");
-const bottomRight = document.querySelector("#bottomright");
+const buttonPad1 = document.querySelector("#button1");
+const buttonPad2 = document.querySelector("#button2");
+const buttonPad3 = document.querySelector("#button3");
+const buttonPad4 = document.querySelector("#button4");
 const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
@@ -101,55 +87,55 @@ function gameTurn() {
 
 function one() {
   if (noise) {
-    let audio = document.getElementById("clip1");
+    let audio = document.getElementById("plySound1");
     audio.play();
   }
   noise = true;
-  topLeft.style.backgroundColor = "lightgreen";
+  buttonPad1.style.backgroundColor = "#ff0000";
 }
 
 function two() {
   if (noise) {
-    let audio = document.getElementById("clip2");
+    let audio = document.getElementById("plySound2");
     audio.play();
   }
   noise = true;
-  topRight.style.backgroundColor = "tomato";
+  buttonPad2.style.backgroundColor = "#0055ff";
 }
 
 function three() {
   if (noise) {
-    let audio = document.getElementById("clip3");
+    let audio = document.getElementById("plySound3");
     audio.play();
   }
   noise = true;
-  bottomLeft.style.backgroundColor = "yellow";
+  buttonPad3.style.backgroundColor = "#00cc00";
 }
 
 function four() {
   if (noise) {
-    let audio = document.getElementById("clip4");
+    let audio = document.getElementById("plySound4");
     audio.play();
   }
   noise = true;
-  bottomRight.style.backgroundColor = "lightskyblue";
+  buttonPad4.style.backgroundColor = "#ffff33";
 }
 
 function clearColor() {
-  topLeft.style.backgroundColor = "darkgreen";
-  topRight.style.backgroundColor = "darkred";
-  bottomLeft.style.backgroundColor = "goldenrod";
-  bottomRight.style.backgroundColor = "darkblue";
+  buttonPad1.style.backgroundColor = "#990000";
+  buttonPad2.style.backgroundColor = "#003399";
+  buttonPad3.style.backgroundColor = "#006600";
+  buttonPad4.style.backgroundColor = "#b3b300";
 }
 
 function flashColor() {
-  topLeft.style.backgroundColor = "lightgreen";
-  topRight.style.backgroundColor = "tomato";
-  bottomLeft.style.backgroundColor = "yellow";
-  bottomRight.style.backgroundColor = "lightskyblue";
+  buttonPad1.style.backgroundColor = "#ff0000";
+  buttonPad2.style.backgroundColor = "#0055ff";
+  buttonPad3.style.backgroundColor = "#00cc00";
+  buttonPad4.style.backgroundColor = "#ffff33";
 }
 
-topLeft.addEventListener('click', (event) => {
+buttonPad1.addEventListener('click', (event) => {
   if (on) {
     playerOrder.push(1);
     check();
@@ -162,7 +148,7 @@ topLeft.addEventListener('click', (event) => {
   }
 })
 
-topRight.addEventListener('click', (event) => {
+buttonPad2.addEventListener('click', (event) => {
   if (on) {
     playerOrder.push(2);
     check();
@@ -175,7 +161,7 @@ topRight.addEventListener('click', (event) => {
   }
 })
 
-bottomLeft.addEventListener('click', (event) => {
+buttonPad3.addEventListener('click', (event) => {
   if (on) {
     playerOrder.push(3);
     check();
@@ -188,7 +174,7 @@ bottomLeft.addEventListener('click', (event) => {
   }
 })
 
-bottomRight.addEventListener('click', (event) => {
+buttonPad4.addEventListener('click', (event) => {
   if (on) {
     playerOrder.push(4);
     check();
@@ -205,13 +191,13 @@ function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
 
-  if (playerOrder.length == 10 && good) {
+  if (playerOrder.length == 5 && good) {
     winGame();
   }
 
   if (good == false) {
     flashColor();
-    turnCounter.innerHTML = "NO!";
+    turnCounter.innerHTML = "Wrong NO!";
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       clearColor();
@@ -243,7 +229,7 @@ function check() {
 
 function winGame() {
   flashColor();
-  turnCounter.innerHTML = "WIN!";
+  turnCounter.innerHTML = "YOU WIN!";
   on = false;
   win = true;
 }

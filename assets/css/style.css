@@ -12,17 +12,17 @@ body {
 }
 
 
-.button1,
-.button2,
-.button3,
-.button4 {
+#button1,
+#button2,
+#button3,
+#button4 {
     height: calc(50vh - 1.2em);
     border-radius: 20%;
     margin: .6em;
 }
 
-.button1 {
-    background-color: #990000;
+#button1 {
+    background-color: #990000;  
     
     border: solid 3px #0d0d0d; /* fallback colour */
     border: solid 3px hsla(0,0%,5%,1); 
@@ -36,6 +36,21 @@ body {
     hsla(0,0%,100%,.5) 0px  0px 6px 4px; /* outer HL */ 
 }
 
+
+#turn {
+  position: absolute;
+  background: #330000;
+  color: red;
+  font-family: courier;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-left: 90px;
+  margin-top: 170px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
 
 /*.button1:hover {
     background-color: #ff0000;
@@ -53,7 +68,7 @@ body {
 /*  } */
 
 
-.button2 {
+#button2 {
     background-color: #003399;
  
  border: solid 3px #0d0d0d; /* fallback colour */
@@ -85,7 +100,7 @@ body {
 
 /*  } */
 
-.button3 {
+#button3 {
     background-color: #006600;
  
  border: solid 3px #0d0d0d; /* fallback colour */
@@ -119,7 +134,7 @@ body {
 /*}*/
 
 
-.button4 {
+#button4 {
     background-color: #b3b300;
   
   border: solid 3px #0d0d0d; /* Fallback colour */
@@ -150,7 +165,7 @@ body {
 /*    hsla(60,100%,80%,.5) 0px  0px 6px 4px; /* outer HL */ 
 /*}*/
 
-.centerPad {
+#inner-circle {
     position: absolute;
     text-align: center;
     height: 10em;
@@ -345,10 +360,10 @@ body {
 
 @media (min-width: 991px) {
     
-.button1,
-.button2,
-.button3,
-.button4 {
+#button1,
+#button2,
+#button3,
+#button4 {
         
     height: calc(50vh - 10.9em);
     }

@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Simon Game | Milestone Project 2</title>
 
+<!-- audio links -->
 
-
-    <audio id="clip1">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    <audio id="plySound1">
+  	<source src="assets/sounds/sound1.mp3"></source>
   </audio>
-  <audio id="clip2">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  <audio id="plySound2">
+  	<source src="assets/sounds/sound2.mp3"></source>
   </audio>
-  <audio id="clip3">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  <audio id="plySound3">
+  	<source src="assets/sounds/sound3.mp3"></source>
   </audio>
-  <audio id="clip4">
-  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  <audio id="plySound4">
+  	<source src="assets/sounds/sound4.mp3"></source>
   </audio>
 
 </head>
@@ -37,6 +37,7 @@
 
     <div class="container-fluid">
         
+<!-- simon header -->
 
         <div class="row">
             <div class="d-none d-lg-block header-wrapper">
@@ -49,6 +50,7 @@
             </div>
         </div>
 
+<!-- Game rules -->
 
         <div class="row">
             <div class="d-none d-lg-block col-lg-3 rules-wrapper">
@@ -60,18 +62,22 @@
                 </div>
             </div>
 
+<!-- buttons and gameplay -->
+
             <div class="col-sm-12 col-lg-6 gameSection">
                 <div class="row">
-                    <div id="topleft" class="col button1"></div>
-                    <div id="topright" class="col button2"></div>
+                    <div id="button1" class="col button1e"></div>
+                    <div id="button2" class="col button2e"></div>
                 </div>
 
                 <div class="row">
-                    <div id="bottomleft" class="col button3"></div>
-                    <div id="bottomright" class="col button4"></div>
+                    <div id="button3" class="col button3e"></div>
+                    <div id="button4" class="col button4e"></div>
                 </div>
 
             </div>
+
+<!-- setting section -->
 
             <div class="d-none d-lg-block col-lg-3 settings-wrapper">
                 <div class="game-settings">
@@ -79,22 +85,12 @@
                     <span>Settings</span>
                     <hr class="devider">
                     
-                    <div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="on">
-  <label class="custom-control-label" for="on">Toggle Sound Off/On</label>
-</div>
+                    
                     
                     <!-- radios -->
                   <div class="select-dificulty"><span><strong>Select Dificulty </strong></span>
                     
-                    <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">Normal</label>
-</div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Strict&nbsp;&nbsp;&nbsp;&nbsp;</label>
-</div>
+                    
            
            </div>   
                     
@@ -148,20 +144,26 @@
 
     </div>
 
-
-    <div id="start" class="centerPad">
-
-
-        <i class="fas fa-play playCounter"></i>
-
-
-        <!--<span class="fa-stack fa-4x">
- <i class=""></i>
- <strong class="fas">27</strong>
- </span>            for adding numbers to count                    -->
-
-
+<!-- circel pad -->
+    
+    <div id="inner-circle">
+      <div id="title" class="font-effect-emboss">SIMON!</div>
+      <div id="switches">
+        <input type="checkbox" class="toggle" id="on">
+        <button class="button" id="start">Start</button>
+        <input type="checkbox" class="toggle" id="strict">
+      </div>
+      <div class="text1">
+        <span>POWER</span><span>STRICT</span>
+      </div>
+      <div id="turn"></div>
+      <div class="text2">
+        COUNT
+      </div>
     </div>
+    
+    
+    
 
     <div id="turn"></div>
 
